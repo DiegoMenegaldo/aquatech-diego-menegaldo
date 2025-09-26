@@ -1,0 +1,142 @@
+/* Adicionar aqui toda a estilização criada para sua aplicação. */
+
+*{
+    box-sizing: border-box; /* ajustar o tamanho do elemento */ 
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header { /* Cabeçalho*/
+    background-color: black;
+    border-bottom: 3px solid #32b9cd;   /* Parte baixa da borda, é sólida e tem cor azulada */
+}
+
+.header .container { /* Estilização exclusiva da classe container dentro da classe header*/
+    display: flex; /* Ajusta o elemento a resolução da tela*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px; /* Empurra o elemento para mais dentro do HTML 0 é esquerdo e 120 direita*/
+    /* padding-right: 120px; PODE SER ASSIM TAMBÉM */
+}
+
+.titulo { /* Classe do título "AquaTech"*/
+    color: #32b9cd;
+}
+
+.navbar { /*Navegação entre páginas*/
+    display: flex; /*Ajustou para a tela, ficou na horizontal*/
+    list-style: none;
+    width: 300px; /*Largura*/
+    justify-content: space-between; /*Máximo de espaçamento de acordo com a div*/
+    color: #e3b062
+}
+
+.navbar a{ /*Tag a exclusiva da navbar*/
+    color: #e3b062;
+    outline: none; /*A opção fica em DESTAQUE*/
+    text-decoration: none; /**/
+}
+
+.agora{
+    font-weight: bolder;
+}
+
+.banner {
+    height: 400px; /*Altura*/
+    width: 100%; /*100% de largura referenciando o body*/
+    background-image: url('../assets/imgs/bg-jelly-fish-para-home.png'); /*é como se estivesse dando um cd e digitar o caminho do diretório*/
+    background-size: cover; /*Ajusta a imagem para o tamanho da div*/
+}
+
+.banner .container{ /*Estilização do container exclusivo do banner*/
+    width: 100%; /*100% referente a classe banner*/
+    height: 100%;
+    display: flex;
+    justify-content: center; /*Texto no centro da página, vertical*/
+    align-items: center; /*Texto no centro da página, horizontal*/
+}
+
+.banner .container p{ /*Estilização da tag p que pertence ao container da tag banner*/
+    color: white;
+    width: 170px; /*Diminui a largura do texto, para deixar ele mais apertado*/
+    margin: 0; /*Para o elemento, no caso, o texto se ajustar melhor a página*/
+    font-size: 24px;
+    margin-right: 300px; /*Joguei o texto para a direita, descentralizando-o e adequando-o a imagem*/
+}
+
+.banner .container p span{
+    font-weight: bolder; /*Estilização da tag span, dentro da tag p que pertence ao container da tag banner*/
+}
+
+.social { /*Missão visão e valores*/
+    height: 400px;
+    width: 100%;
+    background-color: #dcdcdc;
+}
+
+.social .container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes { /*Box dos pilares da empresa*/
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box{
+    width: 250px;
+    display: flex;
+    flex-direction: column; /*Inverte o eixo, agora justify-content vira vertical e align-items vira horizontal*/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box img { /*Referencia a tag img dentro da classe .box*/
+    width: 120px;
+    height: 120px;
+}
+
+.box h4{
+    margin: 0;
+    margin-top: 10px; /*Afasta o texto da tag h4 das imagens*/
+    color: #ed145b;
+}
+
+.footer{
+    height: 120px;
+    width: 100%;
+    background-color: #32b9cd;
+}
+
+.footer .container { /*Referencia o container na classe footer, somente*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.footer h4{
+    margin-bottom: 0;
+}
+
+/* Aqui se encerra o index.html */
+
+/* BORDER-RADIUS DEIXA A INPUT ARREDONDADA */
+
+/* FAZER TELA DE LOGIN E CADASTRO */
+
+.login{
+    background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+}
